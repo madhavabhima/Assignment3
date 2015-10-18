@@ -1,0 +1,16 @@
+---
+output: html_document
+---
+## Example
+
+### Regression Knit example
+
+```{r}
+
+summary(lm(airquality$Ozone ~ airquality$Temp+airquality$Month))
+
+# we can use the below method as well
+
+setwd("C:/CTU/Big Data")
+mydata <- read.csv("Ozone_data.csv")
+summary(lm(Ozone ~ Temp+Month, data = mydata))
